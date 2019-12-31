@@ -34,7 +34,7 @@ def play(song_number, songs)
   puts "Playing #{songs[song_number]}"
 end
 
-def exit
+def exit_
   puts "Goodbye!"
   exit
 end
