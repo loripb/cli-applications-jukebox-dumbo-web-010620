@@ -49,7 +49,6 @@ end
 
 def run(songs)
   user_input = ''
-  prompt
 
   until user_input == 'exit'
     prompt
