@@ -20,7 +20,7 @@ def help_
   puts "- exit : eits thid program"
 end
 
-def list
+def list(songs)
   count = 1
   songs.map do |song|
     puts "#{count}. #{song}"
