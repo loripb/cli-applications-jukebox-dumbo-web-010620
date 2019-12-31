@@ -28,6 +28,8 @@ def play(songs)
   puts "Please enter a song name or number:"
   song = get_user_input
 
+  # if the input is 1 character long we'll assume it's a number, if not we check to see if it is in the song list.
+  # if the input is in the song list we retrive the index. if no of that checks out, throw an error.
   if song.length < 2
     puts "Playing #{songs[song.to_i - 1]}"
   elsif songs.include?(song)
