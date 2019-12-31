@@ -1,4 +1,5 @@
 require 'pry'
+
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -6,3 +7,5 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : eits thid program"
 end
+
+binding.pry
