@@ -28,4 +28,8 @@ def list(songs)
   end
 end
 
+def play(song)
+
+end
+
 binding.pry
