@@ -32,7 +32,11 @@ def play(song_number, songs)
   song_number -= 1
 
   puts "Playing #{songs[song_number]}"
+end
 
+def exit
+  puts "Goodbye!"
+  exit
 end
 
 binding.pry
