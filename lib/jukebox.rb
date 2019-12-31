@@ -51,7 +51,6 @@ def run(songs)
   prompt
 
   until user_input == 'exit'
-    prompt
     user_input = get_user_input
 
     if user_input == 'help'
