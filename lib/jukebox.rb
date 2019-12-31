@@ -27,3 +27,5 @@ def list
     count += 1
   end
 end
+
+pry
