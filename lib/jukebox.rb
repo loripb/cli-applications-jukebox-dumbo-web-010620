@@ -14,7 +14,7 @@ def list(songs)
   end
 end
 
-def play(song_number, songs)
+def play(song_number)
   song_number -= 1
 
   puts "Playing #{songs[song_number]}"
@@ -46,7 +46,7 @@ def run(songs)
       list(songs)
     elsif user_input == 'play'
       song_number = get_user_input.to_i
-      play(song_number, songs)
+      play(song_number)
     end
 
 
