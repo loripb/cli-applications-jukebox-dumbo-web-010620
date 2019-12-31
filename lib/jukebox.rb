@@ -31,7 +31,7 @@ end
 def play(song_number, songs)
   song_number -= 1
 
-  puts "Playing #{song[song_number]}"
+  puts "Playing #{songs[song_number]}"
 
 end
 
