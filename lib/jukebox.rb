@@ -28,4 +28,4 @@ def list
   end
 end
 
-pry
+binding.pry
