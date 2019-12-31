@@ -28,7 +28,10 @@ def list(songs)
   end
 end
 
-def play(song)
+def play(song_number, songs)
+  song_number -= 1
+
+  puts "Playing #{song[song_number]}"
 
 end
 
