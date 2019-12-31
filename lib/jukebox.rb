@@ -31,9 +31,9 @@ def play(songs)
   if song.length < 2
     puts "Playing #{songs[song.to_i - 1]}"
   else
-    song.each_with_index do |song, index|
-
-    end
+    index = get_index(song, songs)
+    puts "Playing #{songs[index]}"
+  end
 end
 
 def exit_jukebox
