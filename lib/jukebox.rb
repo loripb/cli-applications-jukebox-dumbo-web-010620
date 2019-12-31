@@ -14,11 +14,26 @@ def list(songs)
   end
 end
 
+def get_index(song_to_lookup, songs)
+  result = 0
+  songs.each_with_index do |song, index|
+    if song == song_to_lookup
+      result = index
+    end
+  end
+  result
+end
+
 def play(songs)
   puts "Please enter a song name or number:"
-  song_number = get_user_input
+  song = get_user_input
 
-  puts "Playing #{songs[song_number.to_i - 1]}"
+  if song.length < 2
+    puts "Playing #{songs[song.to_i - 1]}"
+  else
+    song.each_with_index do |song, index|
+
+    end
 end
 
 def exit_jukebox
