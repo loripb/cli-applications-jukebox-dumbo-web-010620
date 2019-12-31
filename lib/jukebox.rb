@@ -39,4 +39,20 @@ def exit
   exit
 end
 
+def prompt
+  puts "Please enter a command:"
+end
+
+def get_user_input
+  gets.strip
+end
+
+def run
+  user_input = gets.strip
+
+  until user_input == 'exit'
+
+  end
+end
+
 binding.pry
