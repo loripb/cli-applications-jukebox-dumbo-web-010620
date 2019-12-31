@@ -7,3 +7,7 @@ def help_
   puts "- play : lets you choose a song to play"
   puts "- exit : eits thid program"
 end
+
+def list
+
+end
