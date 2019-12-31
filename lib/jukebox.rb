@@ -33,6 +33,8 @@ def play(songs)
   elsif songs.include?(song)
     index = get_index(song, songs)
     puts "Playing #{songs[index]}"
+  else
+    puts "Invalid input, please try again"
   end
 end
 
