@@ -1,16 +1,6 @@
 require 'pry'
 
-songs = [
-  "Phoenix - 1901",
-  "Tokyo Police Club - Wait Up",
-  "Sufjan Stevens - Too Much",
-  "The Naked and the Famous - Young Blood",
-  "(Far From) Home - Tiga",
-  "The Cults - Abducted",
-  "Phoenix - Consolation Prizes",
-  "Harry Chapin - Cats in the Cradle",
-  "Amos Lee - Keep It Loose, Keep It Tight"
-]
+
 
 def help
   puts "I accept the following commands:"
@@ -34,7 +24,7 @@ def play(song_number, songs)
   puts "Playing #{songs[song_number]}"
 end
 
-def exit
+def exit_jukebox
   puts "Goodbye!"
   exit
 end
@@ -47,12 +37,24 @@ def get_user_input
   gets.strip
 end
 
-def run
-  user_input = gets.strip
+def run(songs)
+  user_input = get_user_input
 
   until user_input == 'exit'
+    prompt
+    user_input = get_user_input
 
+    if user_input == 'help'
+      help
+    elsif user_input == 'list'
+      list(songs)
+    elsif user_input == 'play'
+      play(user_input, songs)
+    end
+
+      
   end
+  exit_jukebox
 end
 
 binding.pry
