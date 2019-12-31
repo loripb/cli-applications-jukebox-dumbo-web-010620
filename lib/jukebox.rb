@@ -63,8 +63,8 @@ def run(songs)
     elsif user_input == 'list'
       list(songs)
     elsif user_input == 'play'
-      song_number = get_user_input.to_i
-      play(song_number)
+      song = get_user_input.to_i
+      play(song)
     end
 
 
