@@ -18,7 +18,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_number = get_user_input
 
-  puts "Playing #{songs[song_number.to_i]}"
+  puts "#{songs[song_number.to_i]}"
 end
 
 def exit_jukebox
